@@ -20,17 +20,42 @@
             }
         </style>
         <script>
-            // 1 way is console.log()
-            console.log(' Js code is running Inside head tag');
+            // 2 way is console.log()
+            window.alert('Js code is running inside head tag');
+           
         </script>
     </head>
     <body>
         <div class="box1">oklabs1</div>
         <div class="box2">oklabs2</div>
         <div class="box3" style="width:400px;height:400px;background-color: blue;text-align: center;line-height: 400px;border-radius: 400px;color: white;border-radius: 400px;font-size: 2em;">oklabs3</div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+
+        <script src="./js/script.js"></script>
         <script>
-            // 2 way to chek output is window.alert
-            window.alert('Js code is running inside body tag');
+            // 1 way to chek output is window.alert
+            console.log(' Js code is running Inside body tag');
+        </script>
+
+        <script>
+            var x = 10; //variable and initialization
+
+            // first way to watch js output
+
+            console.log(typeof x);
+
+            // 2 way to watch js output
+
+            window.alert(typeof x);
+
+            // 3 way to watch js output
+
+            document.getElementById('box5').innerHTML = typeof x
+            
+            // 4 way to watch js output
+            document.write('<h1>'+typeof x+'<h1/>');
+
         </script>
     </body>
 </html>
